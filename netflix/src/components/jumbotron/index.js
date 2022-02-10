@@ -1,11 +1,13 @@
 import React from 'react';
-import { Container, Inner, Pane, Title, SubTitle, Image } from './styles/jumbotron';
+import { Container, Inner, Item, Pane, Title, SubTitle, Image } from './styles/jumbotron';
 
 const Jumbotron = ({ children, direction = 'row', ...restProps }) => {  // have to have bracket becasue those are objects that we are passing down
     return (
-        <Inner direction={direction}>
-            {children}
-        </Inner>
+        <Item direction={direction} {...restProps}>
+            <Inner>
+                {children}
+            </Inner>
+        </Item>
     )
 
 };
