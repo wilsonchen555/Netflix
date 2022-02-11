@@ -11,7 +11,7 @@ const Jumbotron = ({ children, direction = 'row', ...restProps }) => {  // have 
     )
 
 };
-
+//compound componenets 
 Jumbotron.Container = function JumbotronContainer({ children, ...restProps }) {
     return <Container {...restProps}>{children}</Container>;
 };
